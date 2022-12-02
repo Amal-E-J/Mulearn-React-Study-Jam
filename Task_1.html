@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <button onclick="increment()">+</button>
+    <h2 id="count"></h2>
+    <button onclick="decrement()">-</button>
+    <script>
+        var data = 100;
+        document.getElementById("count").innerText = data;
+        function increment() {
+            data = data + 1;
+            document.getElementById("count").innerText = data;
+        }
+        function decrement() {
+            data = data - 1;
+            document.getElementById("count").innerText = data;
+        }
+    </script>
+</body>
+</html>
